@@ -1,11 +1,24 @@
-import { FaPhone, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Link() {
-    return (
-        <>
-            <h2>Links</h2>
-            <p><FaGithub />github.com/BeatriceWN</p>
-            <p><FaLinkedin />linkedin.com/in/beatricewambui</p>
-        </>
-    )
+  return (
+    <div className="links">
+      <a
+        className="link-btn"
+        href="https://github.com/BeatriceWN"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FaGithub />
+      </a>
+      <a
+        className="link-btn"
+        href="https://linkedin.com/in/beatricewambui"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FaLinkedin />
+      </a>
+    </div>
+  );
 }
