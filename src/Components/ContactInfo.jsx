@@ -1,13 +1,16 @@
-import { FaPhone, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function ContactInfo() {
     return (
-        <>
-            <h2>Contact</h2>
-            <p><FaPhone />+254 728 459 520</p>
-            <p><FaEnvelope />bettyneema2@gmail.com</p>
-            <p><FaGithub />github.com/BeatriceWN</p>
-            <p><FaLinkedin />linkedin.com/in/beatricewambui</p>
-        </>
+        <div className="contact-info">
+            <div className="contacr-row">
+                 <FaPhone className="icon"/>
+                 <span>+254 728 459 520</span>
+            </div>
+            <div className="contacr-row">
+                <FaEnvelope className="icon"/>
+                <span>bettyneema2@gmail.com</span>
+            </div>
+        </div>
     )
 }
